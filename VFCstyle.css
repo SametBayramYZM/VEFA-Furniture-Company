@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.body {
+  height: 9000px;
+  width: 84%;
+  border: 1px solid red;
+  margin: auto;
+  margin-left: 11%;
+}
+
+.cookies {
+  width: 100%;
+  height: 38px;
+  background-color: #ebebeb;
+  display: flex;
+}
+
+p {
+  margin: auto;
+  font-size: smaller;
+}
+
+.close {
+  cursor: pointer;
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-top: 7px;
+}
+
+.close:hover {
+  background-color: lightgray;
+}
+
+.saleCount {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4em;
+  color: #f5f5f5;
+  /* display: none; */
+  cursor: pointer;
+}
+
+.supNav {
+  width: 100%;
+  height: 30px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+li {
+  display: inline-block;
+  color: #6e6e6e;
+  text-align: left;
+  margin-right: 2.5%;
+  font-size: small;
+  cursor: pointer;
+}
+
+li:hover {
+  border-bottom: 1px solid #050404;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid red;
+}
+
+#header.stick {
+  position: fixed;
+  width: 84%;
+  top: 0;
+  margin-top: 15px;
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 25%;
+  right: 5.5%;
+  border-radius: 100%;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background: none;
+}
+
+.burger:hover {
+  background-color: #f5f5f5;
+}
+
+.leftNav {
+  width: 25.2%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  left: -25.2%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  background-color: #fff;
+  border-right: 1px solid green;
+  transition: margin-left, 0.25s;
+}
+
+.leftNav.active {
+  margin-left: 25.2%;
+  transition: margin-left, 0.25s;
+}
+
+#leftNavClose {
+    margin: 8% 15%;
+}
+
+footer {
+  width: 100%;
+  height: 650px;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEFA Furniture Company</title>
+    <link rel="stylesheet" href="VFCstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="cookies" data-closable>
+      <p>
+        By using our website, you consent to cookies. For more details, please
+        visit our <a href="">Cookie Policy</a>.
+      </p>
+      <button class="close">&times;</button>
+    </div>
+
+    <div class="body" onclick="closeNav()">
+      <div class="saleCount">SALE COUNT</div>
+
+      <div class="supNav">
+        <li>IKEA Stores</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+      </div>
+
+      <div id="header">
+        <button class="burger" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="leftNav" id="leftNav">
+      <button class="close" id="leftNavClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <footer></footer>
+
+    <script src="VFCscript.js"></script>
+  </body>
+</html>
