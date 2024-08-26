@@ -1,0 +1,16 @@
+.body {
+    height: 1075px;
+}
+
+.logIn {
+    right: 2%;
+}
+
+.logParent {
+    margin: auto;
+    border: 1px solid;
+    width: 70%;
+    height: 40%;
+    position: relative;
+    top: 10%;
+}

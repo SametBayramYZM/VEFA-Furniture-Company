@@ -8,7 +8,7 @@ for (i = 0; i < closebtns.length; i++) {
 }
 
 var header = document.getElementById("header");
-var stop = header.offsetTop - 60;
+var stop = header.offsetTop - 20;
 
 window.onscroll = function (e) {
   var scrollTop =
@@ -22,53 +22,41 @@ window.onscroll = function (e) {
     header.className = "";
   }
 };
-
-// let burger = document.querySelectorAll(".burger");
-// let leftNav = document.querySelector(".leftNav");
-
-// for (i = 0; i < burger.length; i++) {
-//   burger[i].onclick = function () {
-//     leftNav.classList.toggle("active");
-//   };
-// }
-
-// let body = document.querySelector(".body");
-// for (i = 0; i < body.length; i++) {
-//   body[i].onclick = function () {
-//     leftNav.classList.toggle("leftNav");
-//   };
-// }
-/*
-var navToggled = false;
-
-function toggleNav() {
-  if (navToggled) {
-    openNav();
-    navToggled = false;
-  } else {
-    closeNav();
-    navToggled = true;
-  }
+function leftNav() {
+  document.getElementById("leftNav").classList.toggle("showLeftNav");
+  document.body.style.background = "#DCDCDC";
 }
 
-// document.querySelector(".burger").addEventListener("click", openNav);
-// document.querySelector(".body").addEventListener("click", closeNav);
+function searchDrop() {
+  document.getElementById("searchDrop").classList.toggle("show");
+  document.body.style.background = "#DCDCDC";
+}
 
-// function openNav() {
-//   document.getElementsByClassName("leftNav").style.width = "25.2%";
-// }
+function searchDropClick() {
+  document.body.style.background = "#FFF";
+}
 
-// function closeNav() {
-//   document.getElementsByClassName("leftNav").style.width = "0%";
-// }
-*/
-
-function openNav() {
-    const sideBarWidth = document.getElementById("leftNav").style.marginLeft;
-
-    if (!sideBarWidth || sideBarWidth == "0px") {
-        document.getElementById("leftNav").style.marginLeft = "0%";
-    } else if (sideBarWidth !== "0px") {
-        document.getElementById("leftNav").style.marginLeft = "-22.5%"
+window.onclick = function (event) {
+  if (!event.target.matches(".burger")) {
+    var leftNavs = document.getElementsByClassName("leftNav");
+    var j;
+    for (j = 0; j < leftNavs.length; j++) {
+      var openLeftNav = leftNavs[j];
+      if (openLeftNav.classList.contains("showLeftNav")) {
+        openLeftNav.classList.remove("showLeftNav");
+        document.body.style.background = "#FFF";
+      }
     }
-}
+  }
+  if (!event.target.matches(".search")) {
+    var dropdowns = document.getElementsByClassName("searchDrop");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+        document.body.style.background = "#FFF";
+      }
+    }
+  }
+};

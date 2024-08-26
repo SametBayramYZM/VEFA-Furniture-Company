@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VEFA Furniture Company</title>
+    <title>Login | VEFA</title>
     <link rel="stylesheet" href="VFCstyle.css" />
     <link
       rel="stylesheet"
@@ -12,21 +12,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="VFCloginstyle.css" />
   </head>
   <body>
-    <div class="cookies" data-closable>
-      <p>
-        By using our website, you consent to cookies. For more details, please
-        visit our <a href="">Cookie Policy</a>.
-      </p>
-      <button class="close">&times;</button>
-    </div>
     <div class="body" onclick="closeNav()">
       <div class="saleCount">SALE COUNT</div>
       <div class="supNav">
@@ -48,9 +36,7 @@
         </button>
         <div class="leftNav" id="leftNav"></div>
 
-        <div class="logo">
-          <img src="" alt="Logo.png" />
-        </div>
+        <div class="logo"><img src="" alt="Logo.png" /></div>
         <div class="searchDiv" id="searchDiv" onclick="searchDrop()">
           <input
             type="search"
@@ -156,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div class="logIn" onclick="javascript:location.href='VFClogin.html'">
+        <div class="logIn">
           <div class="userIcon"><i class="fa-solid fa-user"></i></div>
           Log In or Sign Up
         </div>
@@ -173,6 +159,8 @@
         </ul>
       </div>
       <hr />
+
+      <div class="logParent"></div>
     </div>
 
     <footer></footer>

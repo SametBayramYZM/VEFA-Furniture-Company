@@ -7,10 +7,11 @@ body {
 
 .body {
   height: 9000px;
-  width: 84%;
+  width: 83.75%;
   border: 1px solid red;
   margin: auto;
-  margin-left: 11%;
+  margin-left: 11.1%;
+  flex-direction: column;
 }
 
 .cookies {
@@ -46,14 +47,15 @@ p {
   font-weight: 900;
   font-size: 4em;
   color: #f5f5f5;
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 
 .supNav {
   width: 100%;
   height: 30px;
-  border-bottom: 2px solid #eeeeee;
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
@@ -72,7 +74,8 @@ li:hover {
 #header {
   width: 100%;
   height: 100px;
-  border-bottom: 1px solid red;
+  display: flex;
+  justify-content: space-between;
 }
 
 #header.stick {
@@ -80,6 +83,7 @@ li:hover {
   width: 84%;
   top: 0;
   margin-top: 15px;
+  border-bottom: 1px solid #DFDFDF;
 }
 
 .burger {
@@ -103,28 +107,292 @@ li:hover {
   width: 25.2%;
   height: 100%;
   position: fixed;
-  display: block;
-  left: -25.2%;
+  left: 0%;
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: 0;
+  z-index: 2;
   background-color: #fff;
   border-right: 1px solid green;
-  transition: margin-left, 0.25s;
+  transition: ease-in 1.5s;
+  display: none;
 }
 
-.leftNav.active {
-  margin-left: 25.2%;
-  transition: margin-left, 0.25s;
-}
-
-#leftNavClose {
-    margin: 8% 15%;
+.showLeftNav {
+  display: block;
 }
 
 footer {
   width: 100%;
   height: 650px;
   background-color: #f5f5f5;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  border: 1px solid;
+  position: relative;
+  bottom: -17.5%;
+  right: 3.3%;
+}
+
+.searchDiv {
+  width: 73%;
+  height: 55%;
+  border: none;
+  position: relative;
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  top: 18%;
+  right: 2%;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: #f5f5f5;
+  font-size: 1em;
+  text-align: center;
+  z-index: 1;
+  border-color: #0058a3;
+}
+
+.search:hover {
+  background-color: #dfdfdf;
+}
+
+.search:focus {
+  background-color: #fff;
+  outline-color: #0058a3;
+}
+
+#srcIcon {
+  position: relative;
+  bottom: 75%;
+  left: 2%;
+  cursor: text;
+  z-index: 1;
+}
+
+.searchDrop {
+  position: relative;
+  width: 102.5%;
+  height: 1600%;
+  bottom: 165%;
+  right: 1.5%;
+  border-radius: 1%;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dropSeries {
+  position: relative;
+  width: 96%;
+  height: 30%;
+  left: 2%;
+  top: 9%;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.dropSeller {
+  position: relative;
+  width: 96%;
+  height: 55%;
+  left: 2%;
+  top: 11%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+
+.dsItem {
+  width: 24.4%;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.dsProduct {
+  position: relative;
+  width: 95%;
+  height: 70%;
+  left: 2.5%;
+  top: 10%;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.dsProductImg {
+  position: relative;
+  border: 1px solid rgb(43, 255, 0);
+  width: 90%;
+  height: 65%;
+  left: 5%;
+}
+
+.dsProductName {
+  font-weight: 400;
+  position: relative;
+  left: 5%;
+  top: -5%;
+}
+
+.dsProductInfo {
+  position: relative;
+  width: 90%;
+  height: 10%;
+  left: 5%;
+  top: -10%;
+  text-align: start;
+}
+
+.dsProductPrice {
+  position: relative;
+  width: 90%;
+  height: 12%;
+  left: 5%;
+  top: -8%;
+  text-align: start;
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.dsProductButtons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  left: 6%;
+  top: -4%;
+  cursor: auto;
+}
+
+.dsAddCart {
+  position: relative;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  background-color: #0058a3;
+  color: white;
+  border: none;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.dsAddCart:hover {
+  background-color: #004f93;
+}
+
+.dsAddFav {
+  position: relative;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: large;
+  padding-top: 4px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dsAddFav:hover {
+  background-color: #f5f5f5;
+}
+
+.searchDrop:focus {
+  background-color: #fff;
+}
+
+.userIcon {
+  position: relative;
+  height: 30px;
+  width: 35px;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 5px;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.userIcon:hover {
+  background-color: #f5f5f5;
+}
+
+.logIn {
+  position: relative;
+  height: 25%;
+  width: 10%;
+  top: 30%;
+  right: 1%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.favorites {
+  position: relative;
+  top: 28%;
+  right: 1%;
+  cursor: pointer;
+  width: 35px;
+  height: 28px;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 6px;
+}
+
+.favorites:hover {
+  background-color: #f5f5f5;
+}
+
+.bag {
+  position: relative;
+  top: 28%;
+  right: 1%;
+  width: 35px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.bag:hover {
+  background-color: #f5f5f5;
+}
+
+.subNav {
+  height: 20px;
+  width: 100%;
+  text-align: start;
+  position: relative;
+  bottom: 0.2%;
+  z-index: -10;
+}
+
+.subNavItem {
+  display: inline-block;
+  position: relative;
+  left: -2.5%;
+  font-size: 0.9em;
+  font-weight: bold;
+  z-index: -10;
+}
+
+hr {
+  position: relative;
+  top: -10px;
+  color: #F5F5F5;
+  z-index: -10;
 }
