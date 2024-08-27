@@ -1,16 +1,247 @@
 .body {
-    height: 1075px;
+  height: 1000px;
+  border: none;
+}
+
+.supNav {
+  border-bottom: 2px solid #f5f5f5;
 }
 
 .logIn {
-    right: 2%;
+  right: 2%;
+}
+
+.subNavItem {
+  position: relative;
+  bottom: 20px;
+  color: black;
+}
+
+.pageParent {
+  width: 100%;
+  height: 93.8%;
+  display: flex;
+  justify-content: center;
 }
 
 .logParent {
-    margin: auto;
-    border: 1px solid;
-    width: 70%;
-    height: 40%;
-    position: relative;
-    top: 10%;
+  margin: auto;
+  width: 68.5%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 2%;
+  bottom: 2%;
+}
+
+.login {
+  width: 47.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hello {
+  margin-top: 10%;
+  font-size: larger;
+  width: 40%;
+  height: 15%;
+}
+
+.merhaba {
+  position: relative;
+  bottom: 40%;
+}
+
+.means {
+  position: relative;
+  bottom: 60%;
+  font-size: smaller;
+}
+
+.logInText {
+  width: 40%;
+}
+
+.form {
+  height: 62.5%;
+  width: 74%;
+  position: relative;
+  top: 3%;
+  text-align: start;
+  justify-content: start;
+}
+
+.logForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+}
+
+.usernameText {
+  position: relative;
+  top: 10%;
+  height: 41%;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid #929292;
+  border-radius: 4px;
+}
+
+.usernameText:focus {
+  outline: 2px solid #0058a3;
+  border: #0058a3;
+  height: 43%;
+}
+
+.usernameFail {
+  position: relative;
+  top: 10%;
+  color: #e00751;
+}
+
+.validWrong {
+  display:block;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+.fieldWrong {
+  display: block;
+  font-size: smaller;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 2%;
+  height: 25%;
+}
+
+.passwordText {
+  position: relative;
+  top: 10%;
+  height: 41%;
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid #929292;
+  border-radius: 4px;
+}
+
+.passwordText:focus {
+  outline: 2px solid #0058a3;
+  border: #0058a3;
+  height: 43%;
+}
+
+.passwordFail {
+  position: relative;
+  top: 10%;
+  color: #e00751;
+}
+
+.validWrong,
+.fieldWrong {
+    display: none;
+}
+
+.remember {
+  position: relative;
+  top: 2%;
+  color: #929292;
+  height: 8%;
+  width: 40%;
+}
+
+.rememberCheck {
+  width: 1.75em;
+  height: 1.75em;
+  border: 0.1mm solid;
+  border-radius: 4px;
+  position: relative;
+  right: 3%;
+}
+
+.rememberLabel {
+  position: relative;
+  bottom: 20%;
+  font-size: small;
+  color: #6e6e6e;
+  font-weight: 500;
+}
+
+.reCAPTCHA {
+  border: 1px solid blue;
+  position: relative;
+  top: 5%;
+  width: 78%;
+  height: 18%;
+}
+
+.loginBtn {
+  background-color: #0058a3;
+  color: white;
+  border: none;
+  height: 13.5%;
+  border-radius: 30px;
+  font-size: medium;
+  cursor: pointer;
+  position: relative;
+  top: 12%;
+  width: 100.5%;
+}
+
+.loginBtn:hover {
+  background-color: #004f93;
+}
+
+.mid {
+  width: 0.1%;
+  height: 75%;
+  margin: auto 0;
+  background-color: #dcdcdc;
+  margin-bottom: 10%;
+}
+
+.sign {
+  width: 52.45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.signDiv {
+  width: 65%;
+  height: 52%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+  left: 6%;
+}
+
+p {
+  font-size: 1.05em;
+}
+
+.signBtn {
+  background-color: #0058a3;
+  height: 16%;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.signBtn:hover {
+  background-color: #004f93;
 }

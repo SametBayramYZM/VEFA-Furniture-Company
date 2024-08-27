@@ -8,7 +8,7 @@ for (i = 0; i < closebtns.length; i++) {
 }
 
 var header = document.getElementById("header");
-var stop = header.offsetTop - 20;
+var stop = header.offsetTop;
 
 window.onscroll = function (e) {
   var scrollTop =
@@ -32,10 +32,6 @@ function searchDrop() {
   document.body.style.background = "#DCDCDC";
 }
 
-function searchDropClick() {
-  document.body.style.background = "#FFF";
-}
-
 window.onclick = function (event) {
   if (!event.target.matches(".burger")) {
     var leftNavs = document.getElementsByClassName("leftNav");
@@ -48,7 +44,7 @@ window.onclick = function (event) {
       }
     }
   }
-  if (!event.target.matches(".search")) {
+  if (!event.target.matches(".searchDiv")) {
     var dropdowns = document.getElementsByClassName("searchDrop");
     var i;
     for (i = 0; i < dropdowns.length; i++) {

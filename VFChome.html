@@ -20,45 +20,24 @@
     />
   </head>
   <body>
-    <div class="cookies" data-closable>
-      <p>
-        By using our website, you consent to cookies. For more details, please
-        visit our <a href="">Cookie Policy</a>.
-      </p>
-      <button class="close">&times;</button>
-    </div>
-    <div class="body" onclick="closeNav()">
-      <div class="saleCount">SALE COUNT</div>
-      <div class="supNav">
-        <li>IKEA Stores</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-        <li>supnavitem</li>
-      </div>
-      <hr />
-      <div id="header">
+    <div id="header">
+      <div class="headerItem">
         <button class="burger" id="burger" onclick="leftNav()">
           <i class="fa-solid fa-bars fa-xl"></i>
         </button>
         <div class="leftNav" id="leftNav"></div>
 
-        <div class="logo">
-          <img src="" alt="Logo.png" />
-        </div>
+        <div class="logo"><img src="" alt="Logo.png" /></div>
         <div class="searchDiv" id="searchDiv" onclick="searchDrop()">
+          <i class="fa-solid fa-magnifying-glass" id="srcIcon"></i>
           <input
             type="search"
             placeholder="Search for Product"
             class="search"
+            onclick="searchDrop2()"
           />
-          <i class="fa-solid fa-magnifying-glass" id="srcIcon"></i>
-          <div class="searchDrop" id="searchDrop" onclick="searchDropClick()">
+
+          <div class="searchDrop" id="searchDrop">
             <div class="dropSeries"></div>
             <div class="dropSeller">
               <div class="dsItem">
@@ -156,13 +135,37 @@
             </div>
           </div>
         </div>
-        <div class="logIn" onclick="javascript:location.href='VFClogin.html'">
+        <div class="logIn">
           <div class="userIcon"><i class="fa-solid fa-user"></i></div>
           Log In or Sign Up
         </div>
         <div class="favorites"><i class="fa-solid fa-heart"></i></div>
         <div class="bag"><i class="fa-solid fa-basket-shopping"></i></div>
       </div>
+    </div>
+    <div class="cookies" data-closable>
+      <p>
+        By using our website, you consent to cookies. For more details, please
+        visit our <a href="">Cookie Policy</a>.
+      </p>
+      <button class="close">&times;</button>
+    </div>
+    <div class="body" onclick="closeNav()">
+      <div class="saleCount">SALE COUNT</div>
+      <div class="supNav">
+        <li>IKEA Stores</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+        <li>supnavitem</li>
+      </div>
+      <hr />
+      
       <div class="subNav">
         <ul>
           <li class="subNavItem">SubNavItem</li>
