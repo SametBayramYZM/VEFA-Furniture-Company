@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | VEFA</title>
-    <link rel="stylesheet" href="VFCstyle.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEFA Furniture Company</title>
+    <link rel="stylesheet" href="VFCstyle.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="VFCloginstyle.css" />
+      referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF"
+      crossorigin="anonymous">
   </head>
   <body>
     <div id="header">
@@ -29,6 +32,7 @@
             type="search"
             placeholder="Search for Product"
             class="search"
+            onclick="searchDrop2()"
           />
 
           <div class="searchDrop" id="searchDrop">
@@ -137,7 +141,14 @@
         <div class="bag"><i class="fa-solid fa-basket-shopping"></i></div>
       </div>
     </div>
-    <div class="body">
+    <div class="cookies" data-closable>
+      <p>
+        By using our website, you consent to cookies. For more details, please
+        visit our <a href="">Cookie Policy</a>.
+      </p>
+      <button class="close">&times;</button>
+    </div>
+    <div class="body" onclick="closeNav()">
       <div class="saleCount">SALE COUNT</div>
       <div class="supNav">
         <li>IKEA Stores</li>
@@ -150,8 +161,7 @@
         <li>supnavitem</li>
         <li>supnavitem</li>
         <li>supnavitem</li>
-      </div>
-      <!-- ********************************SUBNAV******************************** -->
+      </div>      
       <div class="subNav">
         <ul>
           <li class="subNavItem">SubNavItem</li>
@@ -161,84 +171,8 @@
           <li class="subNavItem">SubNavItem</li>
         </ul>
       </div>
-      <!-- *********************************LOGIN******************************** -->
-      <div class="pageParent">
-        <div class="logParent">
-          <div class="login">
-            <div class="hello">
-              <h1 class="merhaba">Merhaba!</h1>
-              <p class="means">means "Hello" in Turkish.</p>
-            </div>
-            <div class="logInText">
-              <h2>Login</h2>
-            </div>
-            <div class="form">
-              <form action="" class="logForm">
-                <div class="userName">
-                  <label for="Username">Username/E-mail address </label>
-                  <input
-                    type="text"
-                    placeholder=" Username/E-mail address"
-                    class="usernameText"
-                  />
-                  <div class="usernameFail">
-                    <p class="validWrong">
-                      Please enter a valid email address.
-                    </p>
-                    <p class="fieldWrong">
-                      <i
-                        class="fa-solid fa-circle-exclamation"
-                        style="color: #e00751"
-                      ></i>
-                      This field is required.
-                    </p>
-                  </div>
-                </div>
-                <div class="password">
-                  <label for="Password">Password</label>
-                  <input
-                    type="password"
-                    placeholder=" Password"
-                    class="passwordText"
-                  />
-                  <div class="passwordFail">
-                    <p class="fieldWrong">
-                      <i
-                        class="fa-solid fa-circle-exclamation"
-                        style="color: #e00751"
-                      ></i>
-                      This field is required.
-                    </p>
-                  </div>
-                </div>
-                <div class="remember">
-                  <input type="checkbox" class="rememberCheck" />
-                  <label for="" class="rememberLabel">Remember me</label>
-                </div>
-                <div class="reCAPTCHA"></div>
-                <button type="submit" class="loginBtn">Login</button>
-              </form>
-            </div>
-          </div>
-          <div class="mid"></div>
-          <div class="sign">
-            <div class="signDiv">
-              <h2>Don't have an account yet?</h2>
-              <p>
-                Create an VEFA account to complete your purchase of beautifully
-                designed, functional and high quality furniture and home
-                accessories easily and quickly. As a member, you can track your
-                orders and coupons, create favorite lists, save them, send them
-                by e-mail and be informed about the campaigns at VEFA.
-              </p>
-              <br />
-              <button class="signBtn">Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- *********************************FOOTER******************************* -->
     </div>
+
     <footer></footer>
     <script src="VFCscript.js"></script>
   </body>
