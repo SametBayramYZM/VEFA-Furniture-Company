@@ -8,37 +8,118 @@
   <title>Home Furnishing and Accessories | VEFA</title>
 </head>
 
-<body>
+<body id="body">
   <!-- HEADER START -->
-  <article class="header">
+  <article class="header" id="hdr">
     <section class="burger" onclick="navShow()">
       <i class="fa-solid fa-bars"></i>
     </section>
     <header class="hdr-body">
       <nav class="hdr-item">
-        <section class="logo"></section>
+        <figure class="logo"></figure>
         <!-- SEARCH START -->
         <section class="sec-src" id="sec-src">
           <i class="src-icon fa-solid fa-magnifying-glass fa-sm" id="src-icon"></i>
-          <input type="search" class="src-inp" id="src-inp" placeholder="Search for Product">
+          <input type="search" class="src-inp" id="src-inp" placeholder="Search for Product" onclick="srcDrp()">
+          <article class="src-drp" id="src-drp">
+            <section class="drp-srs"></section>
+            <section class="drp-sls">
+              <article class="drp-itm">
+                <section class="drs-p">
+                  <figure class="drs-ph"></figure>
+                  <figcaption class="dpp-cpt">
+                    <header class="dcp-hdr">PRODUCT</header>
+                    <p class="dcp-p">day-bed, 200x200 cm</p>
+                    <section class="dcp-prc">₺14,599</section>
+                  </figcaption>
+                  <section class="dcp-icon">
+                    <article class="dcp-gem">
+                      <i class="fa-regular fa-gem fa-flip-vertical fa-lg"></i>
+                    </article>
+                    <article class="dcp-hrt">
+                      <i class="fa-regular fa-heart fa-lg"></i>
+                    </article>
+                  </section>
+                </section>
+              </article>
+              <article class="drp-itm">
+                <section class="drs-p">
+                  <figure class="drs-ph"></figure>
+                  <figcaption class="dpp-cpt">
+                    <header class="dcp-hdr">PRODUCT</header>
+                    <p class="dcp-p">day-bed, 200x200 cm</p>
+                    <section class="dcp-prc">₺6,999</section>
+                  </figcaption>
+                  <section class="dcp-icon">
+                    <article class="dcp-gem">
+                      <i class="fa-regular fa-gem fa-flip-vertical fa-lg"></i>
+                    </article>
+                    <article class="dcp-hrt">
+                      <i class="fa-regular fa-heart fa-lg"></i>
+                    </article>
+                  </section>
+                </section>
+              </article>
+              <article class="drp-itm">
+                <section class="drs-p">
+                  <figure class="drs-ph"></figure>
+                  <figcaption class="dpp-cpt">
+                    <header class="dcp-hdr">PRODUCT</header>
+                    <p class="dcp-p">day-bed, 200x200 cm</p>
+                    <section class="dcp-prc">₺8,499</section>
+                  </figcaption>
+                  <section class="dcp-icon">
+                    <article class="dcp-gem">
+                      <i class="fa-regular fa-gem fa-flip-vertical fa-lg"></i>
+                    </article>
+                    <article class="dcp-hrt">
+                      <i class="fa-regular fa-heart fa-lg"></i>
+                    </article>
+                  </section>
+                </section>
+              </article>
+              <article class="drp-itm">
+                <section class="drs-p">
+                  <figure class="drs-ph"></figure>
+                  <figcaption class="dpp-cpt">
+                    <header class="dcp-hdr">PRODUCT</header>
+                    <p class="dcp-p">day-bed, 200x200 cm</p>
+                    <section class="dcp-prc">₺4,399</section>
+                  </figcaption>
+                  <section class="dcp-icon">
+                    <article class="dcp-gem">
+                      <i class="fa-regular fa-gem fa-flip-vertical fa-lg"></i>
+                    </article>
+                    <article class="dcp-hrt">
+                      <i class="fa-regular fa-heart fa-lg"></i>
+                    </article>
+                  </section>
+                </section>
+              </article>
+            </section>
+          </article>
         </section>
-        <!-- SEARCH END -->
-        <section class="sec-log">
-          <i class="fa-regular fa-user fa-lg"></i>
-        </section>
+        <!-- SEARCH END - LOGIN OR SIGNUP BUTTON EVENT START -->
+        <button class="sec-log" id="sec-log">
+          <i class="user-icon fa-regular fa-user" id="user-icon"></i>
+          Hey! Log in or sign up
+        </button>
+        <!-- LOGIN OR SIGNUP BUTTON EVENT END -->
         <section class="sec-fav">
           <i class="fa-regular fa-heart fa-lg"></i>
         </section>
         <section class="sec-gem">
-          <i class="fa-regular fa-gem fa-lg"></i>
+          <i class="fa-regular fa-gem fa-lg fa-flip-vertical"></i>
         </section>
       </nav>
     </header>
   </article>
-  <!-- HEADER END -->
+  <!-- HEADER END - NAV SIDE START -->
   <article class="nav-side" id="nav-side">
     <nav></nav>
   </article>
+  <!-- NAV SIDE END -->
+  <footer></footer>
   <script src="https://kit.fontawesome.com/dd07946fef.js" crossorigin="anonymous"></script>
   <script src="vefaScript.js"></script>
 </body>

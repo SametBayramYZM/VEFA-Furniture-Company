@@ -11,11 +11,7 @@ var header = document.getElementById("header");
 var stop = header.offsetTop;
 
 window.onscroll = function (e) {
-  var scrollTop =
-    window.scrollY !== undefined
-      ? window.scrollY
-      : (document.documentElement || document.body.parentNode || document.body)
-          .scrollTop;
+  var scrollTop = window.scrollY !== undefined ? window.scrollY : (document.documentElement || document.body.parentNode || document.body).scrollTop;
   if (scrollTop >= stop) {
     header.className = "stick";
   } else {
