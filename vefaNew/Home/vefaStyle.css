@@ -6,16 +6,14 @@
   margin: 0;
 }
 
-body {
-  height: 2000px;
-}
+body {height: 2000px;}
 /* HEADER START */
 .header {
   background-color: #fff;
   display: flex;
   height: 88px;
-  width: 100%;
   position: fixed;
+  width: 100%;
 }
 
 .burger {
@@ -38,8 +36,8 @@ body {
   left: -25.2%;
   position: fixed;
   top: 0;
-  width: 25.2%;
   transition: margin-left .25s;
+  width: 25.2%;
   z-index: 2;
 }
 
@@ -68,15 +66,16 @@ body {
 
 .sec-src {
   height: 58%;
-  width: 73%;
-  position: relative;
   left: 1.4%;
+  position: relative;
+  width: 73%;
 }
 
 .src-icon {
+  cursor: text;
+  left: 2.5%;
   position: relative;
   top: 75%;
-  left: 2.5%;
   z-index: 4;
 }
 
@@ -166,6 +165,34 @@ body {
   width: 95.6%;
 }
 
+.srs-div {
+  height: 90%;
+  margin: auto;
+  position: relative;
+  top: 4%;
+  width: 97.5%;
+}
+
+.srs-hdr {
+  font-size: large;
+  font-weight: 700;
+}
+
+.srs-lnk {
+  height: 89%;
+  width: 100%;
+}
+
+.srs-items {
+  cursor: pointer;
+  padding-top: 11px;
+  width: 20%;
+}
+
+.srs-items:hover {text-decoration: underline;}
+
+.srs-icn {margin-right: 8%;}
+
 .drp-sls {
   border-radius: 8px;
   display: flex;
@@ -184,7 +211,6 @@ body {
 }
 
 .drs-p {
-  border: 1px solid;
   height: 80%;
   left: 6%;
   position: relative;
@@ -205,12 +231,12 @@ body {
   cursor: pointer;
   height: 23.5%;
   position: relative;
-  top: 8.5%;
+  top: 8.75%;
 }
 
 .dcp-hdr {
-  font-weight: bolder;
   font-size: 16px;
+  font-weight: bolder;
 }
 
 .dcp-p {
@@ -221,28 +247,54 @@ body {
 
 .dcp-prc {
   height: 40%;
-  font-weight: 700;
   font-size: 21px;
+  font-weight: 700;
   position: relative;
-  top: 10%;
+  top: 9%;
 }
 
 .dcp-icon {
-  border: 1px solid blue;
   display: flex;
-  width: 100%;
   height: 40px;
   position: relative;
-  top: 7%;
-  
+  top: 7.5%;
+  width: 100%;
 }
 
-/* .dcp-gem {} */
-/* SEARCH DROP END */
+.dcp-gem {
+  background-color: #0058a3;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  height: 100%;
+  padding-top: 7px;
+  text-align: center;
+  width: 40px;
+}
+
+.dcp-gem:hover{background-color: #004f93;}
+
+.dcp-hrt {
+  cursor: pointer;
+  left: 9%;
+  position: relative;
+  top: 22%;
+}
+/* SEARCH DROP END - MAIN START */
+main {
+  border: 1px solid;
+  height: 625px;
+  left: 11.1%;
+  position: relative;
+  top: 5.2%;
+  width: 84%;
+}
+/* MAIN END */
 footer {
   background-color: #f5f5f5;
   height: 691px;
   position:relative;
   top: 100%;
   width: 100%;
+  z-index: -1;
 }

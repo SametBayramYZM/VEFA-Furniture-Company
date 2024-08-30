@@ -56,4 +56,6 @@ function hovnLog () {
 
 function srcDrp () {
   document.getElementById("src-drp").classList.toggle("drp-shw");
+  document.getElementById("src-inp").addEventListener("focus");
 }
+
